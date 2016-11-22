@@ -1,0 +1,111 @@
+$('#not-bell-desktop').click(function(){
+  if(!$('#notifications').hasClass('active'))
+  {
+    $('#notifications').addClass('active');
+    $('#not-bell-desktop').css('color','#ff0303');
+  }
+  else{
+    $('#notifications').removeClass('active');
+    $('#not-bell-desktop').css('color','inherit');
+  }
+});
+
+$('#not-bell-mob').click(function(){
+  if(!$('#notifications').hasClass('active'))
+  {
+    $('#notifications').addClass('active');
+    $('#not-bell-mob').css('color','#ff0303');
+  }
+  else{
+    $('#notifications').removeClass('active');
+    $('#not-bell-mob').css('color','inherit');
+  }
+});
+
+$('#close-notifications').click(function(){
+  if($('#notifications').hasClass('active'))
+  {
+    $('#notifications').removeClass('active');
+    $('#sidebar').removeClass('active');
+    $('.overlay-dark-bg').removeClass('active');
+  }
+})
+
+$('#sidebar-btn').click(function(){
+  if(!$('#sidebar').hasClass('active'))
+  {
+    $('#sidebar').addClass('active');
+    $('.overlay-dark-bg').addClass('active');
+  }
+  else{
+    $('#sidebar').removeClass('active');
+    $('.overlay-dark-bg').removeClass('active');
+    $('#notifications').removeClass('active');
+  }
+})
+
+
+$('#revenue-options-btn').click(function(){
+  if(!$('.revenue').hasClass('active'))
+  {
+    $('.revenue').addClass('active');
+    $('.analytics').removeClass('active');
+    $('.stats').removeClass('active');
+    $('.daily').removeClass('active');
+  }
+  else{
+    $('.revenue').removeClass('active');
+  }
+})
+
+$('#sales-options-btn').click(function(){
+  if(!$('.analytics').hasClass('active'))
+  {
+    $('.analytics').addClass('active');
+    $('.revenue').removeClass('active');
+    $('.stats').removeClass('active');
+    $('.daily').removeClass('active');
+  }
+  else{
+    $('.analytics').removeClass('active');
+  }
+})
+
+$('#stats-options-btn').click(function(){
+  if(!$('.stats').hasClass('active'))
+  {
+    $('.stats').addClass('active');
+    $('.revenue').removeClass('active');
+    $('.analytics').removeClass('active');
+    $('.daily').removeClass('active');
+  }
+  else{
+    $('.stats').removeClass('active');
+  }
+})
+
+$('#daily-sales-options-btn').click(function(){
+  if(!$('.daily').hasClass('active'))
+  {
+    $('.daily').addClass('active');
+    $('.revenue').removeClass('active');
+    $('.stats').removeClass('active');
+    $('.analytics').removeClass('active');
+  }
+  else{
+    $('.daily').removeClass('active');
+  }
+})
+
+$('#daily-sales-options-btn').click(function(){
+  if(!$('.daily').hasClass('active'))
+  {
+    $('.daily').addClass('active');
+    $('.revenue').removeClass('active');
+    $('.stats').removeClass('active');
+    $('.analytics').removeClass('active');
+  }
+  else{
+    $('.daily').removeClass('active');
+  }
+})
